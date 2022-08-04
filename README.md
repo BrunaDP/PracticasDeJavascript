@@ -24,3 +24,4 @@ git commit -m "mensaje"
 4- subir los cambios
 
 ''
+git push
