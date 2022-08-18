@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let triangulos=[{nombre:"triangulo1",lado_a:20,lado_b:20,lado_c:20},
+        {nombre:"triangulo2",lado_a:40,lado_b:40,lado_c:35},
+        {nombre:"triangulo3",lado_a:24,lado_b:40,lado_c:35},
+        {nombre:"triangulo4",lado_a:40,lado_b:40,lado_c:35}]
+        const resultado=triangulos.filter(triangulo_calculo)
+        function triangulo_calculo(lado_a,lado_b,lado_c){
+            if (triangulos.lado_a == triangulos.lado_b && triangulos.lado_b == triangulos.lado_c){
+                console.log("este es un triangulo equilatero") 
+                  
+            }else if (triangulos.lado_a != triangulos.lado_b && triangulos.lado_a == triangulos.lado_c ||triangulos.lado_b != triangulos.lado_c && triangulos.lado_b == triangulos.lado_a|| triangulo.lado_c== triangulos.b && triangulos.lado_c !=triangulos.lado_a) {
+                console.log("este es un triangulo isosceles") 
+            } else {
+                console.log("este es un triangulo escaleno") 
+            }
+        }
+        console.log(resultado)
+    </script>
+</body>
+</html>

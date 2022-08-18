@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numeros= [10,23,34,45,50,25,15,39,60,100,115];
+        item_numero=100;
+        numeros_sumar=0;
+
+        for(item=0;item<item_numero;item++){
+            if(numeros[item]%2==0){
+                var numero_par=numeros[item];
+                console.log("este numero es par "+numero_par);
+            }
+            if(numeros[item]%2==1){
+                var numero_impar=numeros[item];
+                console.log("este numero es impar "+numero_impar);
+            }
+            if(numeros[item]/15){
+                var multiplo_de_quince=numeros[item];
+                console.log("este numero es multiplo de quince "+multiplo_de_quince);
+            }
+        
+        }for (let index = 0; index < 10; index++) {
+            
+            if(numeros[index]%2==0){
+                
+                numeros_sumar=numeros_sumar+numeros[index];
+                console.log("la suma es "+numeros_sumar);
+            }
+        }
+    </script>
+</body>
+</html>

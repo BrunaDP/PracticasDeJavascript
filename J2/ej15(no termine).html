@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let triangulo_equilatero = "" ;
+        let triangulo_escaleno = "";
+        let triangulo_isosceles = "";
+        let estudiante_de_la_manana={alumno1:1.50,alumno2:1.60,alumno3:1.70,alumno4:1.80,alumno5:1.65};
+        let estudiante_de_la_tarde={alumno1:1.50,alumno2:1.60,alumno3:1.70,alumno4:1.80,alumno5:1.65,alumno5:1.76};
+        let estudiante_de_la_noche={alumno1:1.50,alumno2:1.60,alumno3:1.70,alumno4:1.80,alumno5:1.65,alumno5:1.76,alumno5:1.96,alumno5:1.56,alumno5:1.50,alumno5:1.66,alumno5:1.63};
+        for (let item = 0; item < triangulos.length; item++) {
+           
+            if (triangulos[item].lado_a == triangulos[item].lado_b && triangulos[item].lado_b == triangulos[item].lado_c){
+                triangulo_equilatero = triangulos[item].nombre;
+                console.log("este es un triangulo equilatero "+triangulo_equilatero);
+                 
+
+            }else if (triangulos[item].lado_a != triangulos[item].lado_b && triangulos[item].lado_c != triangulos[item].lado_b && triangulos[item].lado_c != triangulos[item].lado_a){
+                triangulo_escaleno = triangulos[item].nombre;
+                console.log("este es un triangulo escaleno " + triangulo_escaleno);
+                
+            } else {
+                triangulo_isosceles = triangulos[item].nombre;
+                console.log("este es un triangulo isosceles "+triangulo_isosceles) 
+            }
+        }  
+    </script>
+</body>
+</html>

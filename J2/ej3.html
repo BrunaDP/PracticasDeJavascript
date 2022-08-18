@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const alumnos = [10,7,10,5,4,9,3,10,2,5];
+        var alumnos_nota_baja = 0;
+        var alumnos_nota_alta = 0;
+        for (item=0;item < alumnos.length;item++){
+            if (alumnos[item] < 10){
+                alumnos_nota_baja ++;
+                 
+            }else{
+                alumnos_nota_alta ++;
+                 
+            }
+        }
+        console.log(alumnos_nota_alta);
+        console.log(alumnos_nota_baja);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*var es mundial osea abarca todo el codigo
+        y const let es mas especifico*/
+        const listauno=[];
+        const listados=[];
+        let acumuladolistauno = 0;
+        let acumuladolistados = 0;
+        const cantidad_de_elementos=3
+        /* con dejar item igual a cero pero que no supere 3 y que sume eso a la lista*/
+        for (let i =0;i < cantidad_de_elementos; i++){
+            const elemento = parseInt(prompt("ingrese para la lista uno:"));
+            listauno.push(elemento)
+            acumuladolistauno += elemento;
+        }
+        /*acumulado suma cada elemento */
+        console.log(`acumulador lista uno: ${acumuladolistauno}`)
+        
+        for (let i =0;i < cantidad_de_elementos; i++){
+            const elemento = parseInt(prompt("ingrese para la lista dos:"));
+            listauno.push(elemento)
+            acumuladolistados += elemento;
+        }
+        console.log(`acumulador lista dos: ${acumuladolistados}`)
+        if (acumuladolistauno > acumuladolistados){
+            console.log('gano la lista uno')
+        }
+        
+    </script>
+</body>
+</html>

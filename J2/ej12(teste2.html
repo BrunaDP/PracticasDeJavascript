@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+       function triangulo_calculo(lado_a,lado_b,lado_c) {
+        if(lado_a == lado_b&&lado_b==lado_c){
+           console.log("es iGUAL todos los lados por ende es equilatero")
+           return('es iGUAL todos los lados por ende es equilatero');
+        }else if(lado_a==lado_b||lado_a==lado_c||lado_b==lado_c){
+            return('es un triangulo isosceles,osea dos lados igual')
+            console.log('es un triangulo isosceles,osea dos lados igual')
+        }else{return('no es igual ningun lado')}
+    }
+    function triangulo_uno(lado_1,lado_2,lado_3){
+        lado_a = 20;
+        lado_b = 20;
+        lado_c = 20;
+        triangulo_calculo(lado_1,lado_2,lado_3)
+    }
+ 
+    </script>
+</body>
+</html>

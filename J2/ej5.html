@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const empleados = [100,300,500,250,450,540,234,100,500,203];
+        var empleados_salario_total = 0;
+        var empleados_contador_minimo=0;
+        var empleados_contador_maximo=0;
+        for (item=0;item < empleados.length;item++){
+            if (empleados[item] >= 100){
+                empleados_salario_total += empleados[item];
+            }if( empleados[item] <300){
+                empleados_contador_minimo++;   
+            }if( empleados[item] > 300){
+                empleados_contador_maximo++;
+            }
+        }
+        console.log(empleados_salario_total,empleados_contador_minimo,empleados_contador_maximo)
+    </script>
+</body>
+</html>
